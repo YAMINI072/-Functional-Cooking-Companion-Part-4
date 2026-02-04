@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search recipes...">
+            <button id="clear-search" class="clear-btn" style="display: none;">✕</button>
+        </div>
+    </header>
+    <main>
+        <div class="controls">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Recipes</button>
+                <button class="filter-btn" data-filter="vegetarian">Vegetarian</button>
+                <button class="filter-btn" data-filter="quick">Quick</button>
+                <button class="filter-btn" data-filter="favorites">Favorites Only</button>
+            </div>
+            <div class="sort-buttons">
+                <button class="sort-btn active" data-sort="name">Name</button>
+                <button class="sort-btn" data-sort="time">Time</button>
+            </div>
+        </div>
+        <div id="recipe-counter"></div>
+        <div id="recipe-container"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
